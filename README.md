@@ -54,4 +54,4 @@
 
 		    cd c:\[location]
 		
-		    ruby jira_attachment_import_csv.rb.rb
+		    ruby jira_attachment_importer.rb
