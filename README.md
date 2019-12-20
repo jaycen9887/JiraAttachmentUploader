@@ -48,12 +48,12 @@
 		
 		B. Update the Attachments.CSV to include all required attachments.
 		
-			a. First column is: full path of rally attachment
+			a. First column is: full path of attachment
 			
 				Note that if all attachments in the directory need to be uploaded to the same Jira
 				story, put the directory as the full path -- For a single file, add "\[filename.ext]" at the end.
 				
-				example: "C:\[PATH]\[RALLY STORY DIR]"
+				example: "C:\[PATH]"
 				
 			b. Second column is: jira project name	
 				
