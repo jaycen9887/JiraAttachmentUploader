@@ -38,7 +38,7 @@
 	
 		a. First column is: full path of rally attachment
 		
-			#####Note that if all attachments in the directory need to be uploaded to the same Jira story, put the directory as the full path -- For a single file, add "\[filename.ext]" at the end.
+			Note that if all attachments in the directory need to be uploaded to the same Jira story, put the directory as the full path -- For a single file, add "\[filename.ext]" at the end.
 			
 			example: "C:\[PATH]\[RALLY STORY DIR]"
 			
