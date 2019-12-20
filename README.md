@@ -1,6 +1,6 @@
 # JiraAttachmentUploader
 
-###Ruby script to upload Attachments to a Jira story.
+### Ruby script to upload Attachments to a Jira story.
 
 ##### NOTE: This tool was developed and tested with Ruby 2.6.5
 
