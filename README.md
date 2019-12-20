@@ -1,2 +1,57 @@
 # JiraAttachmentUploader
-Ruby script to upload Attachments to a Jira story.
+
+###Ruby script to upload Attachments to a Jira story.
+
+##### NOTE: This tool was developed and tested with Ruby 2.6.5
+
+	1.Install the jira-ruby gem (developed and tested with version 1.7.1)
+
+		    gem install jira-ruby
+	
+	2.Open this link: https://id.atlassian.com/manage/api-tokens
+
+	3.Login if necessary
+
+	4.Click "Create API token" 
+
+	5.Give it a label
+
+	6.Click "Copy to clipboard" 
+
+	7.Right click on the "" ruby script to edit it
+
+	8.Paste the copied token from step 6 into the $password field
+
+	9.Change the following variables
+		
+		a.$username 
+		
+		b.$password    
+		
+			NOTE: This password is not your Jira password. This is an API token [see steps 2-6]
+			
+		c. $site
+		
+			NOTE: This is your Jira site https://myworkplace.jira.com
+			
+	10.Update the Attachments.CSV to include all required attachments.
+	
+		a. First column is: full path of rally attachment
+		
+			#####Note that if all attachments in the directory need to be uploaded to the same Jira story, put the directory as the full path -- For a single file, add "\[filename.ext]" at the end.
+			
+			example: "C:\[PATH]\[RALLY STORY DIR]"
+			
+		b. Second column is: jira project name	
+			
+			example: "Central - Posters"
+		
+		a. Third column is: jira story name
+			
+			example: "QA - Write Functional Test Cases for XYZ Application"
+	
+	11.Run script
+
+		    cd c:\[location]
+		
+		    ruby jira_attachment_import_csv.rb.rb
