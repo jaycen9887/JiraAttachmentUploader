@@ -2,10 +2,10 @@
 
 ### Ruby script to upload Attachments to a Jira story.
 
-## Note that there are two different versions of this script. There is a script for a single file upload, and one for a multi-upload that uses a csv file to map our all files and stories.  
+### Note that there are two different versions of this script. There is a script for a single file upload, and one for a multi-upload that uses a csv file to map our all files and stories.  
 
-##### NOTE: This was developed and tested with Ruby 2.6.5
-
+##### This was developed and tested with Ruby 2.6.5
+```
 	1.Install the jira-ruby gem (developed and tested with version 1.7.1)
 
 		    gem install jira-ruby
@@ -23,9 +23,10 @@
 	7.Right click on the "" ruby script to edit it
 
 	8.Paste the copied token from step 6 into the $password field
+```
 	
-	## For the Single File upload script 
-		
+	### For the Single File upload script 
+```
 		A. Change the following variables 
 	
 			a. $requested_project_name
@@ -34,9 +35,10 @@
 			d. $username 
 			e. $api_token 
 			f. $site	
-	
-	## For the CSV file upload script 
-	
+```
+
+	###For the CSV file upload script 
+```
 		A. Change the following variables
 		
 			a. $username 
@@ -65,3 +67,4 @@
 		    cd c:\[location]
 		
 		    ruby jira_attachment_importer.rb
+```
