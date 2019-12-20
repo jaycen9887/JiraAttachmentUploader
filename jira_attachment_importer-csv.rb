@@ -32,6 +32,7 @@ $log_path = ""
 $log = ""
 $upload_failed_count = 0
 
+#Tests Jira connection
 def test_connection()
 	
 	connected = false
@@ -54,6 +55,7 @@ def test_connection()
 	return connected
 end
 
+#Handles connection error
 def throw_connection_error()
 	begin
 		raise "Jira Connection Error"
@@ -141,6 +143,7 @@ def attach(project_name, issue_name, attachment_path)
 	end
 end
 
+#Handles log writes
 def write_to_file(content, type)
 	if "#{type}" == "error"
 		$log.error "#{content}"
@@ -155,6 +158,7 @@ def write_to_file(content, type)
 	end
 end
 
+#Creates log if it doesn't exists
 def log_file_creation()
 	current_path = File.dirname(File.realpath(__FILE__))
 	$csv_path = "#{current_path}/Attachments.csv"
