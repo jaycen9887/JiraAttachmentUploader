@@ -25,7 +25,7 @@
 	8.Paste the copied token from step 6 into the $password field
 ```
 	
-	### For the Single File upload script 
+### For the Single File upload script 
 ```
 		A. Change the following variables 
 	
@@ -37,7 +37,7 @@
 			f. $site	
 ```
 
-	###For the CSV file upload script 
+###For the CSV file upload script 
 ```
 		A. Change the following variables
 		

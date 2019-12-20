@@ -1,11 +1,11 @@
 # Change the below variables to fit your needs --> Read the README for instructions and additional information
 
-$requested_project_name   = "Central - Posters" #Example: "Central - Posting"
-$requested_issue_name     = "Rally Export" #Exmaple: "QA - Write Functional Test Cases for XYZ application"
-$attachement_location     = "C:\\Users\\itjxm03\\Desktop\\Ruby\\RallyExportTool\\Rally-Export-Attachments\\Saved_Attachments_DEMO\\Central Posters 2019\\TESTING\\testing.txt" #Make sure the escape your backslashes Example: "C:\\[location]\\filename.ext"
-$username                 = "jaycen.milling@railinc.com" #Example: "john.doe@domain.com"
-$api_token                = "Wji1XB7fBlwpUgmxIj3rDBCB" #See README to learn how to create an API token in Jira  Example: "Ajh1XB27AlgpUvmxIj36DnDe"
-$site					  = "https://railinc.jira.com" #Example: "https://mysite.jira.com"
+$requested_project_name   = "" #Example: "Central - Posting"
+$requested_issue_name     = "" #Exmaple: "QA - Write Functional Test Cases for XYZ application"
+$attachement_location     = "" #Make sure the escape your backslashes Example: "C:\\[location]\\filename.ext"
+$username                 = "" #Example: "john.doe@domain.com"
+$api_token                = "" #See README to learn how to create an API token in Jira  Example: "Ajh1XB27AlgpUvmxIj36DnDe"
+$site					  = "" #Example: "https://mysite.jira.com"
 
 #------------------------------------------------------------------------
 #
