@@ -22,7 +22,7 @@
 
 	7.Edit the ruby script you intend to use
 	
-	8.Paste the copied token from step 6 into the $password field
+	8.Paste the copied token from step 6 into the $api_token field
 ```
 	
 ### For the Single File upload script 
@@ -42,7 +42,7 @@
 		A. Change the following variables
 		
 			a. $username 
-			b. $password  
+			b. $api_token  
 			c. $site
 				NOTE: This is your Jira site https://myworkplace.jira.com			
 		
