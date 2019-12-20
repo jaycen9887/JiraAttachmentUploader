@@ -1,9 +1,8 @@
 # Change the below variables to fit your needs --> Read the README for instructions and additional information
 
-
-$username                 = "" #Example: "john.doe@domain.com"
-$password                 = "" #This will not be your password, this will be an API token See README to learn how to create an API token in Jira  Example: "Ajh1XB27AlgpUvmxIj36DnDe"
-$site					  = "" #Example: "https://mysite.jira.com"
+$username                  = "" #Example: "john.doe@domain.com"
+$api_token                 = ""#See README to learn how to create an API token in Jira  Example: "Ajh1XB27AlgpUvmxIj36DnDe"
+$site					   = "" #Example: "https://mysite.jira.com"
 
 # ------------------------------------------------------------------------------
 #
@@ -21,7 +20,7 @@ require 'logger'
 
 options = {
 	:username        => "#{$username}",
-	:password        => "#{$password}",
+	:password        => "#{$api_token}",
 	:site            => "#{$site}",
 	:context_path    => '',
 	:rest_base_path  => '/rest/api/2',
@@ -36,7 +35,7 @@ $upload_failed_count = 0
 def test_connection()
 	
 	connected = false
-	if "#{$username}" == "" || "#{$password}" == "" || "#{$username}" == " " || "#{$password}" == " "
+	if "#{$username}" == "" || "#{$api_token}" == "" || "#{$username}" == " " || "#{$api_token}" == " "
 		throw_connection_error()
 		
 	else
@@ -61,7 +60,7 @@ def throw_connection_error()
 		rescue
 			puts "#------------------------------------------------------------------------------------------------------------------"
 			puts "#"
-			puts "#Connection to Jira was Unsuccessful please verify Username and Password (API Token) on lines #4 and #5 respectively"
+			puts "#Connection to Jira was Unsuccessful please verify Username and API Token on lines #4 and #5 respectively"
 			puts "#"
 			puts "#------------------------------------------------------------------------------------------------------------------"
 			write_to_file("Connection to Jira was unsuccessful", "error")
@@ -143,12 +142,6 @@ def attach(project_name, issue_name, attachment_path)
 end
 
 def write_to_file(content, type)
-	#File.open("#{$log_path.path}", "w") do |file|
-	#	time = Time.new
-	#	timestamp = "#{time.year}-#{time.month}-#{time.day} [#{time.hour}:#{time.min}:#{time.sec}.#{time.usec}] ------ "
-	#	file.write "#{content}"
-	#end
-	
 	if "#{type}" == "error"
 		$log.error "#{content}"
 	elsif "#{type}" == "debug"

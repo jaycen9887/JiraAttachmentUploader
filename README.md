@@ -2,7 +2,9 @@
 
 ### Ruby script to upload Attachments to a Jira story.
 
-##### NOTE: This tool was developed and tested with Ruby 2.6.5
+## Note that there are two different versions of this script. There is a script for a single file upload, and one for a multi-upload that uses a csv file to map our all files and stories.  
+
+##### NOTE: This was developed and tested with Ruby 2.6.5
 
 	1.Install the jira-ruby gem (developed and tested with version 1.7.1)
 
@@ -21,36 +23,44 @@
 	7.Right click on the "" ruby script to edit it
 
 	8.Paste the copied token from step 6 into the $password field
-
-	9.Change the following variables
-		
-		a.$username 
-		
-		b.$password    
-		
-			NOTE: This password is not your Jira password. This is an API token [see steps 2-6]
-			
-		c. $site
-		
-			NOTE: This is your Jira site https://myworkplace.jira.com
-			
-	10.Update the Attachments.CSV to include all required attachments.
 	
-		a. First column is: full path of rally attachment
+	## For the Single File upload script 
 		
-			Note that if all attachments in the directory need to be uploaded to the same Jira story, put the directory as the full path -- For a single file, add "\[filename.ext]" at the end.
-			
-			example: "C:\[PATH]\[RALLY STORY DIR]"
-			
-		b. Second column is: jira project name	
-			
-			example: "Central - Posters"
-		
-		a. Third column is: jira story name
-			
-			example: "QA - Write Functional Test Cases for XYZ Application"
+		A. Change the following variables 
 	
-	11.Run script
+			a. $requested_project_name
+			b. $requested_issue_name 
+			c. $attachement_location 
+			d. $username 
+			e. $api_token 
+			f. $site	
+	
+	## For the CSV file upload script 
+	
+		A. Change the following variables
+		
+			a. $username 
+			b. $password  
+			c. $site
+				NOTE: This is your Jira site https://myworkplace.jira.com			
+		
+		B. Update the Attachments.CSV to include all required attachments.
+		
+			a. First column is: full path of rally attachment
+			
+				Note that if all attachments in the directory need to be uploaded to the same Jira story, put the directory as the full path -- For a single file, add "\[filename.ext]" at the end.
+				
+				example: "C:\[PATH]\[RALLY STORY DIR]"
+				
+			b. Second column is: jira project name	
+				
+				example: "Central - Posters"
+			
+			a. Third column is: jira story name
+				
+				example: "QA - Write Functional Test Cases for XYZ Application"
+	
+	9.Run script
 
 		    cd c:\[location]
 		
