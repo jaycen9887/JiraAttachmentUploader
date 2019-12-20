@@ -115,8 +115,7 @@ def attach(project_name, issue_name, attachment_path)
 			
 			attachment = JIRA::Resource::Attachment.new $client, issue: issueObj
 			
-			#saved = attachment.save! 'file' => attachment_path
-			saved = "true"
+			saved = attachment.save! 'file' => attachment_path
 				
 			if "#{saved}" == "true"
 				puts "File attachment[SUCCESSFUL] -- #{attachment_name} was uploaded to the #{issue_name} story."
