@@ -62,7 +62,8 @@
 			a. Third column is: jira story name
 				
 				example: "QA - Write Functional Test Cases for XYZ Application"
-	
+```
+```
 	9.Run script
 
 		    cd c:\[location]
