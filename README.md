@@ -20,8 +20,8 @@
 
 	6.Click "Copy to clipboard" 
 
-	7.Right click on the "" ruby script to edit it
-
+	7.Edit the ruby script you intend to use
+	
 	8.Paste the copied token from step 6 into the $password field
 ```
 	
@@ -67,5 +67,5 @@
 
 		    cd c:\[location]
 		
-		    ruby jira_attachment_importer.rb
+		    ruby jira_attachment_importer-[version].rb
 ```
